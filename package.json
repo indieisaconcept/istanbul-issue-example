@@ -1,0 +1,28 @@
+{
+  "name": "istanbul-issue-example",
+  "version": "1.0.0",
+  "description": "Istanbul issue example",
+  "author": "indieisaconcept <me@indieisaconcept.com> (http://indieisaconcept.com)",
+  "scripts": {
+    "dot-only": "dot-only-hunter test",
+    "clean": "trash ./test/coverage .nyc_output",
+    "test": "nyc ava --verbose --serial ./test",
+    "pretest": "npm run clean && npm run lint",
+    "lint": "eslint ./index.js ./test",
+    "cover": "nyc report --reporter=html",
+    "precover": "npm test",
+    "ava": "ava"
+  },
+  "devDependencies": {
+    "ava": "0.18.2",
+    "dot-only-hunter": "^1.0.3",
+    "eslint": "^3.18.0",
+    "eslint-config-semistandard": "8.0.0",
+    "eslint-config-standard": "^7.1.0",
+    "eslint-plugin-promise": "3.5.0",
+    "eslint-plugin-standard": "2.1.1",
+    "nyc": "^10.2.0",
+    "trash-cli": "1.4.0"
+  },
+  "dependencies": {}
+}
