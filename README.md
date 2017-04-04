@@ -19,6 +19,8 @@ module.exports = function sum (...args) {
 - `./working.js` baseline comparison
 - `./broken.js` illustrates the issue
 
+![output](./output.png)
+
 ## usage
 
 `> npm run cover`
